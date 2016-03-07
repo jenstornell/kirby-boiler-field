@@ -12,13 +12,13 @@ There is not much documentation about Kirby form fields. As a solution to the pr
 
 ## Installation
 
-1. Copy the `boiler` folder to the right location `site/fields`.
+1. Copy the `boiler` folder to `site/fields`.
 1. Add a [text field](https://getkirby.com/docs/cheatsheet/panel-fields/text) to your blueprint and change the type to `boiler`.
-1. Change it to your needs.
+1. Change the boilerplate to your needs.
 
 ## Basic stuff
 
-Just the [basics](https://getkirby.com/docs/panel/developers/custom-form-fields) to get a text field working for loading and saving.
+Just the [basic stuff](https://getkirby.com/docs/panel/developers/custom-form-fields) to get a text field working for loading and saving.
 
 ## Templating
 
