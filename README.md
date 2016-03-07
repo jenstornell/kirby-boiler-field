@@ -18,7 +18,7 @@ There is not much documentation about Kirby form fields. As a solution to the pr
 
 ## Basic stuff
 
-Just the [basic stuff](https://getkirby.com/docs/panel/developers/custom-form-fields) to get a text field working for loading and saving.
+Just the [basic stuff](https://getkirby.com/docs/panel/developers/custom-form-fields) to have a text field working for loading and saving.
 
 ## Templating
 
@@ -34,9 +34,9 @@ Routes makes it possible to do Ajax requests.
 
 ## jQuery field plugin
 
-To make javascript calls work both before and after save it's good to hook it by using a [jQuery field plugin](https://forum.getkirby.com/t/panel-field-javascript-click-does-not-work-after-save/3474/7).
+To make javascript calls work both before and after save, it's good to hook it by using a [jQuery field plugin](https://forum.getkirby.com/t/panel-field-javascript-click-does-not-work-after-save/3474/7).
 
 ## Future
 
-- I have not figured out how controllers work for form fields yet but it would be nice to add.
+- I have not figured out how controllers work for form fields yet, but it would be nice to add.
 - Maybe change the ajax call from get to post.
