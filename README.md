@@ -1,6 +1,6 @@
 # Kirby Boiler Field
 
-There is not a massive tons of docs about Kirby form fields. As a solution to the problem I created a boilerplate it.
+There is not much documentation about Kirby form fields. As a solution to the problem I created a boilerplate it.
 
 ## Features
 
