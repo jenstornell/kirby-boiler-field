@@ -42,16 +42,4 @@ class BoilerField extends BaseField {
 			)
 		);
 	}
-
-	// Default value fallback
-	public function val() {
-		if($this->value() == "" && $this->default() !== "") {
-			$value = $this->default();
-		} elseif($this->value() == "" && $this->default() == "") {
-			$value = "";
-		} else {
-			$value = $this->value();
-		}
-		return $value;
-	}
 }
