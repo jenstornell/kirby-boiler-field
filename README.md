@@ -1,6 +1,6 @@
 # Kirby Boiler Field
 
-*Version 0.2*
+*Version 2.0*
 
 There is not much documentation about Kirby form fields. As a solution to the problem I created a boilerplate for it.
 
@@ -47,13 +47,13 @@ fields:
 
 ## Changelog
 
-**0.2**
+**2.0**
 
 - Register as plugin instead of field
 - Renamed field from `boiler` to `boilertext`
 - Added field `boilercheckboxes`
 
-**0.1**
+**1.0**
 
 - Initial release
 
