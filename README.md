@@ -1,42 +1,76 @@
 # Kirby Boiler Field
 
+*Version 0.2*
+
 There is not much documentation about Kirby form fields. As a solution to the problem I created a boilerplate for it.
+
+**[Intallation instructions](docs/install.md)**
 
 ## Features
 
-- Basic stuff
-- Templating
-- Routes
-- Ajax
-- jQuery field plugin
+### Textfield
 
-## Installation
+- Extends basefield.
+- Includes field [routes](https://forum.getkirby.com/t/routing-in-custom-form-field/3101/7).
+- [Connects field to javascript](https://forum.getkirby.com/t/panel-field-javascript-click-does-not-work-after-save/3474/7).
+- Includes ajax request. Output data to the console.
 
-1. Copy the `boiler` folder to `site/fields`.
-1. Add a [text field](https://getkirby.com/docs/cheatsheet/panel-fields/text) to your blueprint and change the type to `boiler`.
-1. Change the boilerplate to your needs.
+### Checkboxesfield
 
-## Basic stuff
+- Extends checkboxesfield.
+- Inherit values from the options.
+- Appends own values.
 
-Just the [basic stuff](https://getkirby.com/docs/panel/developers/custom-form-fields) to have a text field working for loading and saving.
+## Setup
 
-## Templating
+### Blueprint
 
-I prefer working on a [template](https://getkirby.com/docs/toolkit/api/tpl/load) instead of [brick](https://getkirby.com/docs/toolkit/api#brick). Therefor this boilerplate has template support.
+To make it work as expected, add the following code to your blueprint:
 
-## Routes
+#### Textfield
 
-It's possible to use routes in panel form fields and I solved it by looking at [Routing in custom form field](https://forum.getkirby.com/t/routing-in-custom-form-field/3101/7).
+```text
+fields:
+  boilertext:
+    title: Your Field1
+    type: boilertext
+```
 
-## Ajax
+#### Checkboxfield
 
-Routes makes it possible to do Ajax requests.
+```text
+fields:
+  boilercheckboxes:
+    title: Your Field2
+    type: boilercheckboxes
+```
 
-## jQuery field plugin
+## Changelog
 
-To make javascript calls work both before and after save, it's good to hook it by using a [jQuery field plugin](https://forum.getkirby.com/t/panel-field-javascript-click-does-not-work-after-save/3474/7).
+**0.2**
 
-## Future
+- Register as plugin instead of field
+- Renamed field from `boiler` to `boilertext`
+- Added field `boilercheckboxes`
 
-- I have not figured out how controllers work for form fields yet, but it would be nice to add.
-- Maybe change the ajax call from get to post.
+**0.1**
+
+- Initial release
+
+## Requirements
+
+- [**Kirby**](https://getkirby.com/) 2.0+
+
+## Disclaimer
+
+This plugin is provided "as is" with no guarantee. Use it at your own risk and always test it yourself before using it in a production environment. If you find any issues, please [create a new issue](https://github.com/jenstornell/kirby-boiler-field/issues/new).
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+It is discouraged to use this plugin in any project that promotes racism, sexism, homophobia, animal abuse, violence or any other form of hate speech.
+
+## Credits
+
+- [Jens Törnell](https://github.com/jenstornell)

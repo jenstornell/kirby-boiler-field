@@ -1,10 +1,10 @@
 <?php
-// Rename "boiler" folder and "boiler.php" file to your field name
-// Rename "Boiler" on line 6 to your field name
-// Rename "boiler" on line 7 to your field name
+// Rename "boilertext" folder and "boiler.php" file to your field name
+// Rename "Boilertext" on line 6 to your field name
+// Rename "boilertext" on line 7 to your field name
 
-class BoilerField extends BaseField {
-	static public $fieldname = 'boiler';
+class BoilertextField extends BaseField {
+	static public $fieldname = 'boilertext';
 	static public $assets = array(
 		'js' => array(
 			'script.js',
@@ -41,17 +41,5 @@ class BoilerField extends BaseField {
 				}
 			)
 		);
-	}
-
-	// Default value fallback
-	public function val() {
-		if($this->value() == "" && $this->default() !== "") {
-			$value = $this->default();
-		} elseif($this->value() == "" && $this->default() == "") {
-			$value = "";
-		} else {
-			$value = $this->value();
-		}
-		return $value;
 	}
 }

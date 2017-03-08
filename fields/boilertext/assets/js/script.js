@@ -1,10 +1,10 @@
-// Rename "boiler" on line 4 and 7 to your field name
+// Rename "boilertext" on line 4 and 7 to your field name
 
 (function($) {
-	$.fn.boiler = function() {
+	$.fn.boilertext = function() {
 		return this.each(function() {
 			var field = $(this);
-			var fieldname = 'boiler';
+			var fieldname = 'boilertext';
 
 			if(field.data( fieldname )) {
 				return true;
